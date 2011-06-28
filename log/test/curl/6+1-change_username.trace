@@ -1,0 +1,40 @@
+== Info: About to connect() to localhost port 9000 (#0)
+== Info:   Trying ::1... == Info: Connection refused
+== Info:   Trying fe80::1... == Info: Connection refused
+== Info:   Trying 127.0.0.1... == Info: connected
+== Info: Connected to localhost (127.0.0.1) port 9000 (#0)
+=> Send header, 271 bytes (0x10f)
+0000: PUT /users/6511271806 HTTP/1.1
+0020: User-Agent: curl/7.19.7 (universal-apple-darwin10.0) libcurl/7.1
+0060: 9.7 OpenSSL/0.9.8l zlib/1.2.3
+007f: Host: localhost:9000
+0095: Accept: */*
+00a2: Content-Length: 160
+00b7: Content-Type: multipart/form-data; boundary=--------------------
+00f7: --------ab9c608b2924
+010d: 
+=> Send data, 160 bytes (0xa0)
+0000: ------------------------------ab9c608b2924
+002c: Content-Disposition: form-data; name="user[username]"
+0063: 
+0065: radix730275
+0072: ------------------------------ab9c608b2924--
+<= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+<= Recv header, 82 bytes (0x52)
+0000: X-Tracer: trace.start: 12.45, before user save: 751.07, total: 7
+0040: 63.5200000000001
+<= Recv header, 21 bytes (0x15)
+0000: Content-Length: 152
+<= Recv header, 17 bytes (0x11)
+0000: Server: Goliath
+<= Recv header, 37 bytes (0x25)
+0000: Date: Tue, 28 Jun 2011 23:22:20 GMT
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 152 bytes (0x98)
+0000: [:object, #<User mongo_id: "6511271806", first_name: "Joe", last
+0040: _name: "Tester", avatar_host: nil, avatar: nil, username: "radix
+0080: 730275">][:user_id, nil]
+== Info: Connection #0 to host localhost left intact
+== Info: Closing connection #0

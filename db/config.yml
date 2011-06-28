@@ -1,0 +1,24 @@
+test: 
+  adapter : em_mysql2
+  database: userexample_test
+  username: root
+  password: 
+  host    : localhost
+
+
+development: 
+  adapter : em_mysql2
+  database: userexample_development
+  username: root
+  password: 
+  host    : localhost
+            
+production: 
+  adapter : em_mysql2
+  database: slapichop_production
+  username: foodtree
+  password: 
+  host    : 
+  port    : 3036
+  wait_timeout : 0.9
+  

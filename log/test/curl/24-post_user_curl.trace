@@ -1,0 +1,33 @@
+== Info: About to connect() to localhost port 9000 (#0)
+== Info:   Trying ::1... == Info: Connection refused
+== Info:   Trying fe80::1... == Info: Connection refused
+== Info:   Trying 127.0.0.1... == Info: connected
+== Info: Connected to localhost (127.0.0.1) port 9000 (#0)
+=> Send header, 261 bytes (0x105)
+0000: POST /users HTTP/1.1
+0016: User-Agent: curl/7.19.7 (universal-apple-darwin10.0) libcurl/7.1
+0056: 9.7 OpenSSL/0.9.8l zlib/1.2.3
+0075: Host: localhost:9000
+008b: Accept: */*
+0098: Content-Length: 489
+00ad: Content-Type: multipart/form-data; boundary=--------------------
+00ed: --------79a155b35472
+0103: 
+=> Send data, 489 bytes (0x1e9)
+0000: ------------------------------79a155b35472
+002c: Content-Disposition: form-data; name="user[id]"
+005d: 
+005f: 2714241150
+006b: ------------------------------79a155b35472
+0097: Content-Disposition: form-data; name="user[first_name]"
+00d0: 
+00d2: Joe
+00d7: ------------------------------79a155b35472
+0103: Content-Disposition: form-data; name="user[last_name]"
+013b: 
+013d: Tester
+0145: ------------------------------79a155b35472
+0171: Content-Disposition: form-data; name="user[username]"
+01a8: 
+01aa: radix2714241150
+01bb: ------------------------------79a155b35472--
